@@ -1,6 +1,6 @@
 {
-  "name": "Blue Beetle",
-  "description": "𝐁𝐄𝐄𝐓𝐋𝐄 𝐁𝐎𝐓",
+  "name": "AMI",
+  "description": "𖤍𝘼𝙈𝙄𖤍",
   "keywords": [
     "bot",
     "whatsapp",
@@ -14,13 +14,13 @@
     "baileys-md",
     "md-bot"
   ],
-  "website": "https://github.com/Madmkisii/Blue-Blue#readme",
-  "repository": "https://github.com/Madmkisii/Blue-Bot.git",
-  "logo": "https://telegra.ph/file/ba046985971b4b6b8b1d4.jpg",
+  "website": "https://github.com/Hammy254/Ami#readme",
+  "repository": "https://github.com/Hammy254/Ami.git",
+  "logo": ""https://telegra.ph/file/b6dcbe7d11efd07bb4c25.jpg",
   "success_url": "/",
   "env": {
     "PREFIX": {
-      "description": "Prefix of Beetle Bot Ex: . , / , # , & etc. Put any symbol",
+      "description": "Prefix of AMI Ex: . , / , # , & etc. Put any symbol",
        "required": true
 
     },
