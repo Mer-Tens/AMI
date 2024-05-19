@@ -49,7 +49,7 @@ const Heroku = require("heroku-client");
 const gptdm = process.env.GPT_INBOX || 'TRUE';
     const cmd = body.startsWith(prefix);
 //const autobio = process.env.AUTOBIO || 'TRUE';
-const botname = process.env.BOTNAME || 'BLUE BEETLE';
+const botname = process.env.BOTNAME || 'Ami';
 const antibot = process.env.ANTIBOT || 'FALSE';
   
     const command = body.replace(prefix, "").trim().split(/ +/).shift().toLowerCase();
@@ -81,8 +81,8 @@ const antibot = process.env.ANTIBOT || 'FALSE';
     };
     const mime = (quoted.msg || quoted).mimetype || "";
             const qmsg = (quoted.msg || quoted);
-    const author = process.env.STICKER_AUTHOR ||'✘𝐃𝐀𝐌𝐎𝐍𓃵𖤍';
-    const packname = process.env.STICKER_PACKNAME || '𝙆𝙞𝙢';
+    const author = process.env.STICKER_AUTHOR ||'𖤍𝘼𝙈𝙄𖤍';
+    const packname = process.env.STICKER_PACKNAME || '𝐇𝐀𝐌𝐌𝐘';
 const dev = process.env.DEV || '254790593618'
 
 const menu = process.env.MENU_TYPE || 'VIDEO';
@@ -93,17 +93,17 @@ const menu = process.env.MENU_TYPE || 'VIDEO';
     const badword = bad.split(",");
     const Owner = DevDreaded.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender)
     // Group
-                        const groupMetadata = m.isGroup ? await client.groupMetadata(m.chat).catch((e) => {}) : "";
+    const groupMetadata = m.isGroup ? await client.groupMetadata(m.chat).catch((e) => {}) : "";
 const groupName = m.isGroup && groupMetadata ? await groupMetadata.subject : "";
-    const participants = m.isGroup && groupMetadata ? await groupMetadata.participants : ""; 
+    const participants = m.isGroup && groupMetadata ? await groupMetadata.participants : "";
      const groupAdmin = m.isGroup ? await getGroupAdmins(participants) : ""; 
      const isBotAdmin = m.isGroup ? groupAdmin.includes(botNumber) : true; 
      const isAdmin = m.isGroup ? groupAdmin.includes(m.sender) : true;
-const admin = process.env.ADMIN_MSG || '𝐇𝐮𝐡!\n𝐀𝐝𝐦𝐢𝐦𝐬 𝐨𝐧𝐥𝐲, 𝐃𝐮𝐦𝐦𝐲.';
-    const group = process.env.GROUP_ONLY_MSG || '𝐆𝐫𝐨𝐮𝐩 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐍𝐢𝐠𝐠𝐚.';
-    const botAdmin = process.env.BOT_ADMIN_MSG || '𝐈𝐦 𝐧𝐨𝐭 𝐚𝐧 𝐚𝐝𝐦𝐢𝐧 𝐌𝐅'
-    const NotOwner = process.env.NOT_OWNER_MSG || '𝐁𝐥𝐮𝐞 𝐁𝐞𝐞𝐭𝐥𝐞 𝐨𝐧𝐥𝐲 ☬';
-const wapresence = process.env.WA_PRESENCE || 'recording';
+const admin = process.env.ADMIN_MSG || '𝐇𝐮𝐡!\n𝐀𝐝𝐦𝐢𝐦𝐬 𝐨𝐧𝐥𝐲.';
+    const group = process.env.GROUP_ONLY_MSG || '𝐆𝐫𝐨𝐮𝐩 𝐜𝐨𝐦𝐦𝐚𝐧𝐝.';
+    const botAdmin = process.env.BOT_ADMIN_MSG || '𝐈𝐦 𝐧𝐨𝐭 𝐚𝐧 𝐚𝐝𝐦𝐢𝐧'
+    const NotOwner = process.env.NOT_OWNER_MSG || '𝘼𝙈𝙄 𝐨𝐧𝐥𝐲';
+const wapresence = process.env.WA_PRESENCE || '';
 const antilink = process.env.ANTILINK || 'TRUE';
 const antilinkall = process.env.ANTILINK_ALL || 'TRUE';
 
@@ -169,7 +169,7 @@ function _0x11cc() {
         'split',
         '84AXXWgJ',
         '4435424UJQIXb',
-        'y\x20DREX\x20',
+        'y\x20Hammy\x20',
         'TRUE',
         'tibot:\x0a\x0a@',
         '\x20as\x20a\x20bot.',
@@ -192,7 +192,7 @@ function _0x11cc() {
         '184473FwtnYZ',
         '18szWhmE',
         'startsWith',
-        '𝐁𝐄𝐄𝐓𝐋𝐄-𝐁𝐎𝐓\x20an',
+        '𝐇𝐀𝐌𝐌𝐘 \x20an',
         '376590puyzhN',
         'key'
     ];
@@ -232,16 +232,16 @@ if (budy.startsWith('>')) {
 
 	   async function loadings () {
 var lod = [
-"🥵",
-"💦",
-"⚡",
-"🚀",
-"😈",
-	"☸",
-        "☬𝐏𝐨𝐧𝐠",	
-"𝐓𝐞𝐬𝐭𝐢𝐧𝐠 𝐁𝐞𝐞𝐭𝐥𝐞 ☫"
+"♤",
+"♡",
+"♧",
+"✚",
+"◇",
+	"☆",
+        "𝐏𝐨𝐧𝐠",	
+"𝘼𝙈𝙄"
 ]
-let { key } = await client.sendMessage(from, {text: '✰𝐏𝐨𝐧𝐠'})
+let { key } = await client.sendMessage(from, {text: '𝐏𝐨𝐧𝐠'})
 
 for (let i = 0; i < lod.length; i++) {
 await client.sendMessage(from, {text: lod[i], edit: key });
@@ -255,9 +255,9 @@ var lod = [
 "《 ███████▒▒▒▒▒》50%",
 "《 ██████████▒▒》80%",
 "《 ████████████》100%",
-"	✦𝐋𝐨𝐚𝐝𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐛𝐲  𝐁𝐞𝐞𝐭𝐥𝐞! ☫"
+"	𖤍𝘼𝙈𝙄𖤍 "
 ]
-let { key } = await client.sendMessage(from, {text: '𝐋𝐨𝐚𝐝𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐛𝐲 𝐁𝐥𝐮𝐞 𝐁𝐞𝐞𝐭𝐥𝐞! ☬...'})
+let { key } = await client.sendMessage(from, {text: '𖤍𝘼𝙈𝙄𖤍'})
 
 for (let i = 0; i < lod.length; i++) {
 await client.sendMessage(from, {text: lod[i], edit: key });
@@ -361,7 +361,7 @@ if (antilink === 'TRUE' && antilinkall === 'TRUE' && body.includes('http') && !O
   
 
     if (cmd && !m.isGroup) {
-      console.log(chalk.black(chalk.bgWhite("[ Classic-ai ]")), color(argsLog, "turquoise"), chalk.magenta("From"), chalk.green(pushname), chalk.yellow(`[ ${m.sender.replace("@s.whatsapp.net", "")} ]`));
+      console.log(chalk.black(chalk.bgWhite("[ Blue-Beetle]")), color(argsLog, "turquoise"), chalk.magenta("From"), chalk.green(pushname), chalk.yellow(`[ ${m.sender.replace("@s.whatsapp.net", "")} ]`));
     } else if (cmd && m.isGroup) {
       console.log(
         chalk.black(chalk.bgWhite("[ LOGS ]")),
@@ -381,152 +381,136 @@ if (antilink === 'TRUE' && antilinkall === 'TRUE' && body.includes('http') && !O
 case "help":
         case "menu": 
 
-		      await loading ()
+	
+let cap = `╭════〘 𖤍 𝘼𝙈𝙄 𖤍 〙═⊷❍⏣
+┃╭──────────────┉◕
+┃│ 𝗢𝘄𝗻𝗲𝗿 :〄༒𝐇𝐀𝐌𝐌𝐘➳ᴹᴿ᭄
+┃│ 𝗨𝘀𝗲𝗿 : ${m.pushName}︎︎
+┃│ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 :${runtime(process.uptime())
+┃│ 𝗣𝗿𝗲𝗳𝗶𝘅 : ${prefix}
+┃│ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: 𝐯𝟏.𝟎.𝟏
+┃│
+┃┃✯┃✯┃✯┃✯┃✯┃✯┃✯
+╰─────────────────⏣
+╰⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚
+ 
+╭𓄂𓄂 𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍 𓄂𓄂
+▯༒༒༒༒༒༒༒༒༒༒
+┴𖤍
+┃✯│${prefix}𝐀  
+┃✯│${prefix}𝐉𝐨𝐢𝐧
+┃✯│${prefix}𝐁𝐨𝐭𝐩𝐩
+┃✯│${prefix}𝐒𝐞𝐭𝐯𝐚𝐫
+┃✯│${prefix}𝐁𝐥𝐨𝐜𝐤
+┃✯│${prefix}𝐊𝐢𝐥𝐥
+┃✯│${prefix}𝐔𝐧𝐛𝐥𝐨𝐜𝐤
+┃✯│${prefix}𝐑𝐞𝐬𝐭𝐚𝐫𝐭
+┬𖤍
+╰༒༒༒༒༒༒༒༒༒༒༒༒༒༒
+╰⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚
+             
+╭𓄂𓄂 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𓄂𓄂
+▯༒༒༒༒༒༒༒༒༒
+┴𖤍             
+┃✯│${prefix}𝐏𝐥𝐚𝐲
+┃✯│${prefix}𝐘𝐭𝐬
+┃✯│${prefix}𝐘𝐭𝐦𝐩3   
+┃✯│${prefix}𝐋𝐲𝐫𝐢𝐜𝐬
+┃✯│${prefix}𝐆𝐢𝐭𝐡𝐮𝐛
+┬𖤍
+╰༒༒༒༒༒༒༒༒༒༒༒༒༒༒
+╰⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚
+             
+ ╭𓄂𓄂 𝗔𝗜 𓄂𓄂
+ ▯༒༒༒༒༒༒༒
+ ┴𖤍
+ ┃✯│${prefix}𝐆𝐩𝐭
+ ┃✯│${prefix}𝐈𝐦𝐠
+ ┃✯│${prefix}𝐀𝐢
+ ┬𖤍
+ ╰༒༒༒༒༒༒༒༒༒༒༒༒༒༒
+ ╰⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚
 
-let cap = `┏━━━━━━━━━━━━━━━━━━┓
-┃     ▇ ◆ 𝐁𝐄𝐄𝐓𝐋𝐄 𝐁𝐎𝐓 ◆ █
-┃✞┏━━━━━━━━━━━━━━━┛
-┃✞┃ 𝗢𝘄𝗻𝗲𝗿 : 𝑲𝒊𝒏𝒈 𝑮
-┃✞┃ 𝗨𝘀𝗲𝗿 : ${m.pushName}︎︎
-┃✞┃ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 :${runtime(process.uptime())}
-┃✞┃ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : 𝐋𝐢𝐧𝐮𝐱
-┃✞┃ 𝗥𝗮𝗺 : 64GB of 256GB
-┃✞┃ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: 𝐯𝟏.𝟎.𝟏
-┃✞┃ 𝗣𝗿𝗲𝗳𝗶𝘅 : ${prefix}
-┃✞┃ 𝗦𝗽𝗲𝗲𝗱 :  *${dreadedspeed.toFixed(4)}* 𝐌𝐬
-┃✞┃
-┃✞┃ ▎▍▌▌▉▏▎▌▉▐▏▌
-┃✞┃┃▎▍▌▌▉▏▎▌▉▐▏▌
-┃✞┃ 
-┃✞┃ ♝ 𝐁𝐄𝐄𝐓𝐋𝐄 𝐁𝐎𝐓 ♗
-┃✞┗━━━━━━━━━━━━━━᪥
-┗━━━━━━━━━━━━━━━━━᪥
+ ╭𓄂𓄂 𝘾𝙊𝘿𝙄𝙉𝙂 𓄂𓄂
+ ▯༒༒༒༒༒༒༒༒༒
+ ┴𖤍            
+ ┃✯│${prefix}𝐄𝐧𝐜
+ ┃✯│${prefix}𝐂𝐨𝐦𝐩𝐢𝐥𝐞-𝐣𝐬
+ ┃✯│${prefix}𝐂𝐨𝐦𝐩𝐢𝐥𝐞-𝐩𝐲
+ ┃✯│${prefix}𝐂𝐨𝐦𝐩𝐢𝐥𝐞-𝐜
+ ┃✯│${prefix}𝐂𝐨𝐦𝐩𝐢𝐥𝐞-𝐜++
+ ┬𖤍
+ ╰༒༒༒༒༒༒༒༒༒༒༒༒༒༒ 
+ ╰⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚
+             
+ ╭𓄂𓄂 𝙂𝙍𝙊𝙐𝙋 𓄂𓄂 
+ ▯༒༒༒༒༒༒༒༒༒༒
+ ┴𖤍
+ ┃✯│${prefix}𝐑𝐞𝐦𝐨𝐯𝐞
+ ┃✯│${prefix}𝐃𝐞𝐦𝐨𝐭𝐞
+ ┃✯│${prefix}𝐎𝐩𝐞𝐧
+ ┃✯│${prefix}𝐅𝐨𝐫𝐞𝐢𝐠𝐧𝐞𝐫𝐬
+ ┃✯│${prefix}𝐅𝐚𝐤𝐞𝐫
+ ┃✯│${prefix}𝐌𝐮𝐭𝐞
+ ┃✯│${prefix}𝐔𝐧𝐦𝐮𝐭𝐞
+ ┃✯│${prefix}𝐈𝐜𝐨𝐧
+ ┃✯│${prefix}𝐃𝐞𝐬𝐜
+ ┃✯│${prefix}𝐒𝐮𝐛𝐣𝐞𝐜𝐭
+ ┃✯│${prefix}𝐃𝐢𝐬𝐩-𝐨𝐟𝐟
+ ┃✯│${prefix}𝐃𝐢𝐬𝐩-1
+ ┃✯│${prefix}𝐃𝐢𝐬𝐩7
+ ┃✯│${prefix}𝐃𝐢𝐬𝐩90
+ ┃✯│${prefix}𝐃𝐞𝐥𝐞𝐭𝐞
+ ┃✯│${prefix}𝐋𝐞𝐚𝐯𝐞
+ ┃✯│${prefix}𝐑𝐞𝐯𝐨𝐤𝐞
+ ┃✯│${prefix}𝐓𝐚𝐠𝐚𝐥𝐥/𝐇𝐢𝐝𝐞𝐭𝐚𝐠
+ ┬𖤍
+ ╰༒༒༒༒༒༒༒༒༒༒༒༒༒༒
+ ╰⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚ 
+             
+ ╭𓄂𓄂 𝙀𝘿𝙄𝙏 𓄂𓄂
+ ▯༒༒༒༒༒༒༒
+ ┴𖤍             
+ ┃✯│${prefix}𝐓𝐨𝐢𝐦𝐠
+ ┃✯│${prefix}𝐓𝐚𝐤𝐞
+ ┃✯│${prefix}𝐒𝐭𝐢𝐜𝐤𝐞𝐫
+ ┃✯│${prefix}.𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥
+ ┃✯│${prefix}𝐃𝐞𝐩𝐥𝐨𝐲
+ ┬𖤍
+ ╰༒༒༒༒༒༒༒༒༒༒༒༒༒༒
+ ╰⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚
+              
+╭𓄂𓄂 𝙊𝙏𝙃𝙀𝙍𝙎 𓄂𓄂
+▯༒༒༒༒༒༒༒༒༒
+┴𖤍            
+┃✯│${prefix}𝐌𝐞𝐧𝐮
+┃✯│${prefix}𝐒𝐜
+┃✯│${prefix}𝐋𝐢𝐧𝐤
+┃✯│${prefix}𝐋𝐢𝐧𝐤𝐩𝐜
+┃✯│${prefix}𝐀𝐥𝐢𝐯𝐞
+┃✯│${prefix}𝐑𝐮𝐧𝐭𝐢𝐦𝐞
+┃✯│${prefix}𝐒𝐩𝐞𝐞𝐝
+┃✯│${prefix}𝐌𝐞
+┃✯│${prefix}𝐏𝐩2
+┃✯│${prefix}𝐒𝐲𝐬𝐭𝐞𝐦
+┃✯│${prefix}𝐂𝐫𝐞𝐝𝐢𝐭𝐬
+┃✯│${prefix}𝐟𝐚𝐧𝐜𝐲
+┃✯│${prefix}𝐪𝐮𝐨𝐭𝐞
+┃✯│${prefix✯}𝐭𝐨𝐩𝐫𝐚𝐧𝐤
+┬𖤍
+╰༒༒༒༒༒༒༒༒༒༒༒༒༒༒
+╰⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚⚚
+┃       
+ ✠    𖤍 𝘼𝙈𝙄 𖤍         ❈ 
+ ✠    ✯✯✯✯✯✯        ❈     
+    ╰═══════════════⊷❍
 
-┏━━━━━━━━━━━━━━━━━━┓
-┃   ⁍ ֎ 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥  ֎ ⁍
-┃✞┏━━━━━━━━━━━━━━━┛
-┃✞┃
-┃✞┃${prefix}𝐀𝐝𝐦𝐢𝐧.
-┃✞┃${prefix}𝐁𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭.
-┃✞┃${prefix}𝐉𝐨𝐢𝐧.
-┃✞┃${prefix}𝐁𝐨𝐭𝐩𝐩.
-┃✞┃>
-┃✞┃${prefix}𝐒𝐞𝐭𝐯𝐚𝐫.
-┃✞┃${prefix}𝐁𝐥𝐨𝐜𝐤.
-┃✞┃${prefix}𝐊𝐢𝐥𝐥.
-┃✞┃${prefix}𝐔𝐧𝐛𝐥𝐨𝐜𝐤.
-┃✞┃${prefix}𝐑𝐞𝐬𝐭𝐚𝐫𝐭.
-┃✞┗━━━━━━━━━━━━━━᪥
-┗━━━━━━━━━━━━━━━━━᪥
-
-┏━━━━━━━━━━━━━━━━━━┓
-┃       ⁍ ֍ 𝗘𝗗𝗜𝗧 ֎ ⁍
-┃✞┏━━━━━━━━━━━━━━━┛
-┃✞┃
-┃✞┃${prefix}𝐒𝐭𝐢𝐜𝐤𝐞𝐫.
-┃✞┃${prefix}𝐓𝐨𝐢𝐦𝐠.
-┃✞┃${prefix}𝐓𝐨𝐦𝐩4.
-┃✞┃${prefix}𝐔𝐩𝐥𝐨𝐚𝐝.
-┃✞┃${prefix}𝐑𝐞𝐦𝐢𝐧𝐢.
-┃✞┃${prefix}𝐒𝐦𝐞𝐦𝐞.
-┃✞┃${prefix}𝐔𝐫𝐥.
-┃✞┃┃${prefix}𝐐𝐜.
-┃✞┗━━━━━━━━━━━━━━᪥
-┗━━━━━━━━━━━━━━━━━᪥
-
-┏━━━━━━━━━━━━━━━━━━┓
-┃    ⁍ ֍ 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 ֍ ⁍
-┃✞┏━━━━━━━━━━━━━━━┛
-┃✞┃
-┃✞┃${prefix}𝐏𝐥𝐚𝐲.
-┃✞┃${prefix}𝐖𝐡𝐚𝐭𝐬𝐨𝐧𝐠.
-┃✞┃${prefix}𝐘𝐭𝐬.
-┃✞┃${prefix}𝐘𝐭𝐦𝐩3.
-┃✞┃${prefix}𝐘𝐭𝐦𝐩4.
-┃✞┃${prefix}𝐋𝐲𝐫𝐢𝐜𝐬.
-┃✞┃${prefix}𝐌𝐨𝐯𝐢𝐞.
-┃✞┃${prefix}𝐌𝐢𝐱.
-┃✞┗━━━━━━━━━━━━━━᪥
-┗━━━━━━━━━━━━━━━━━᪥
-
-┏━━━━━━━━━━━━━━━━━━┓
-┃  ⁍ ֎ 𝗔𝗜 𝗔𝗦𝗦𝗜𝗦𝗧𝗔𝗡𝗧 ֍ ⁍
-┃✞┏━━━━━━━━━━━━━━━┛
-┃✞┃
-┃✞┃${prefix}𝐀𝐢.
-┃✞┃${prefix}𝐊𝐢𝐧𝐠                                                                                                                                                                                                                                                                                
-┃✞┃${prefix}𝐆𝐩𝐭4.
-┃✞┃${prefix}𝐆.
-┃✞┃${prefix}𝐈𝐦𝐠.
-┃✞┃
-┃✞┗━━━━━━━━━━━━━━᪥
-┗━━━━━━━━━━━━━━━━━᪥
-
-┏━━━━━━━━━━━━━━━━━━┓
-┃      ⁍ ֎ 𝗖𝗢𝗗𝗜𝗡𝗚 ֎⁌
-┃✞┏━━━━━━━━━━━━━━━┛
-┃✞┃
-┃✞┃${prefix}𝐄𝐧𝐜.
-┃✞┃${prefix}𝐂𝐨𝐦𝐩𝐢𝐥𝐞-𝐩𝐲.
-┃✞┃${prefix}𝐂𝐨𝐦𝐩𝐢𝐥𝐞-𝐣𝐬.
-┃✞┃${prefix}𝐂𝐨𝐦𝐩𝐢𝐥𝐞-𝐜.
-┃✞┃${prefix}𝐂𝐨𝐦𝐩𝐢𝐥𝐞-𝐜++.
-┃✞┃
-┃✞┗━━━━━━━━━━━━━━᪥
-┗━━━━━━━━━━━━━━━━━᪥
-┏━━━━━━━━━━━━━━━━━━┓
-┃     ⁍ ֎ 𝗢𝗧𝗛𝗘𝗥 ֎ ⁌
-┃✞┏━━━━━━━━━━━━━━━┛
-┃✞┃┃${prefix}𝐌𝐞𝐧𝐮.
-┃✞┃${prefix}𝐏𝐢𝐧𝐠.
-┃✞┃${prefix}𝐒𝐩𝐞𝐞𝐝.
-┃✞┃${prefix}𝐀𝐥𝐢𝐯𝐞.
-┃✞┃${prefix}𝐑𝐮𝐧𝐭𝐢𝐦𝐞.
-┃✞┃${prefix}𝐃𝐩.
-┃✞┃${prefix}𝐎𝐰𝐧𝐞𝐫.
-┃✞┃${prefix}𝐋𝐢𝐬𝐭.
-┃✞┃${prefix}𝐌𝐚𝐢𝐥.
-┃✞┃${prefix}𝐈𝐧𝐛𝐨𝐱.
-┃✞┃${prefix}𝐐𝐮𝐨𝐭𝐞𝐥𝐲.
-┃✞┃${prefix}𝐒𝐜𝐫𝐢𝐩𝐭.
-┃✞┃${prefix}𝐊𝐢𝐦.
-┃✞┃${prefix}𝐒𝐜.
-┃✞┃${prefix}𝐒𝐲𝐬𝐭𝐞𝐦.
-┃✞┃${prefix}𝐂𝐫𝐞𝐝𝐢𝐭𝐬.
-┃✞┗━━━━━━━━━━━━━━᪥
-┗━━━━━━━━━━━━━━━━━᪥
-┏━━━━━━━━━━━━━━━━━━┓
-┃     ⁍ ֎ 𝗚𝗥𝗢𝗨𝗣 ֎ ⁌
-┃✞┏━━━━━━━━━━━━━━━┛
-┃✞┃${prefix}𝐏𝐫𝐨𝐦𝐨𝐭𝐞.
-┃✞┃${prefix}𝐃𝐞𝐦𝐨𝐭𝐞.
-┃✞┃${prefix}𝐃𝐞𝐥𝐞𝐭𝐞.
-┃✞┃${prefix}𝐑𝐞𝐦𝐨𝐯𝐞.
-┃✞┃${prefix}𝐅𝐨𝐫𝐞𝐢𝐠𝐧𝐞𝐫𝐬.
-┃✞┃${prefix}𝐅𝐚𝐤𝐞𝐫.
-┃✞┃${prefix}𝐂𝐥𝐨𝐬𝐞.
-┃✞┃${prefix}𝐎𝐩𝐞𝐧.
-┃✞┃${prefix}𝐃𝐢𝐬𝐩-𝐨𝐟𝐟.
-┃✞┃${prefix}𝐃𝐢𝐬𝐩-7.
-┃✞┃${prefix}𝐃𝐢𝐬𝐩-90.
-┃✞┃${prefix}𝐈𝐜𝐨𝐦.
-┃✞┃${prefix}𝐒𝐮𝐛𝐣𝐞𝐜𝐭.
-┃✞┃${prefix}𝐃𝐞𝐬𝐜.
-┃✞┃${prefix}𝐋𝐞𝐚𝐯𝐞.
-┃✞┃${prefix}𝐓𝐚𝐠𝐚𝐥𝐥.
-┃✞┃${prefix}𝐇𝐢𝐝𝐞𝐭𝐚𝐠.
-┃✞┃${prefix}𝐑𝐞𝐯𝐨𝐤𝐞.
-┃✞┃
-┃✞┗━━━━━━━━━━━━━━᪥
-┃    ↈ 𝐁𝐘 ✞༒𝐃𝚫𝚳𝚯𝚴✞༒
-┗━━━━━━━━━━━━━━━━━᪥`;
 
 if (menu === 'VIDEO') {
 
                    client.sendMessage(m.chat, {
-                        video: fs.readFileSync('./kingbeetle.mp4'),
+                        video: fs.readFileSync('./Ami.mp4'),
                         caption: cap,
-			sourceUrl: "https://chat.whatsapp.com/EPSGKau0IVi7J5lyOJO7Jk",   
                         gifPlayback: true
                     }, {
                         quoted: m
@@ -535,26 +519,26 @@ if (menu === 'VIDEO') {
 client.sendMessage(from, { text: cap}, {quoted: m})
 
 } else if (menu === 'IMAGE') {
-client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/02340ba6afc923969fd97.jpg' }, caption: cap, fileLength: "9999999999"}, { quoted: m })
+client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/590e708627d172e8bfcc8.jpg' }, caption: cap, fileLength: "9999999999"}, { quoted: m })
 } else if (menu === 'LINK') {
 client.sendMessage(m.chat, {
                         text: cap,
                         contextInfo: {
                             externalAdReply: {
                                 showAdAttribution: true,
-                                title: `𝐁𝐄𝐄𝐓𝐋𝐄-𝐁𝐎𝐓`,
+                                title: `𖤍 𝘼𝙈𝙄 𖤍 `,
                                 body: `${runtime(process.uptime())}`,
-                                thumbnail: fs.readFileSync('./bluebeetle.jpg'),
-                                sourceUrl: 'https://wa.me/254790593618?text=ʜᴇʟʟᴏ+𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏+Nihostie+Bot+Mkuu+🥲',
+                                thumbnail: fs.readFileSync('./Ami.jpg'),
+                                sourceUrl: 'https://wa.me/254799384249?text=ʜᴇʟʟᴏ+𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏+Nihostie+Bot+Mkuu+🥲',
                                 mediaType: 1,
                                 renderLargerThumbnail: true
                             }
                         }
                     }, {
                         quoted: m
-                    })
+                    })	     
 
-}
+
           // Group Commands
 break;
 
@@ -597,21 +581,93 @@ reply(resultt.stderr)
 
 break;
 
-case "ai": case "chatgpt": case "openai": {
-if (!q) return xgreply (`Example : ${m.prefix + m.command} create code html & css for hack NASA`)
-var js = await fetch(`https://aemt.me/openai?text=${q}`) 
-var json = await js.json()
-reply(json.result)
+case "Hammy": 
+case "ai":
+const _0x3cfb2e = _0x5913;
+(function (_0x573879, _0x548047) {
+    const _0x197f5a = _0x5913, _0x32c565 = _0x573879();
+    while (!![]) {
+        try {
+            const _0x4329f0 = parseInt(_0x197f5a(0x8f)) / (0x1d * 0x10d + 0x1 * 0x9c2 + -0x283a) + -parseInt(_0x197f5a(0x7e)) / (0x11c0 + -0x1c60 + 0xaa2) * (-parseInt(_0x197f5a(0x76)) / (0x523 * -0x3 + 0x8b * 0x13 + 0x51b * 0x1)) + -parseInt(_0x197f5a(0x7b)) / (0x21ab + 0x1da2 + -0x3f49) + -parseInt(_0x197f5a(0x89)) / (-0x2 * -0x35e + 0x4db + -0xb92) + -parseInt(_0x197f5a(0x90)) / (0x1 * 0x2cd + -0xd * 0xd6 + 0x817) * (parseInt(_0x197f5a(0x74)) / (-0x1 * -0x7a2 + -0x7ca + 0x2f)) + parseInt(_0x197f5a(0x88)) / (-0x1727 + 0x133b * -0x1 + 0xb2 * 0x3d) + parseInt(_0x197f5a(0x86)) / (0x4f0 + 0x1618 + -0x1aff) * (parseInt(_0x197f5a(0x80)) / (0x4fd * -0x1 + -0x4af + 0x9b6));
+            if (_0x4329f0 === _0x548047)
+                break;
+            else
+                _0x32c565['push'](_0x32c565['shift']());
+        } catch (_0x53362d) {
+            _0x32c565['push'](_0x32c565['shift']());
+        }
+    }
+}(_0x2de4, 0x10d265 + 0xf553f + -0x3 * 0x6f4b7));
+function _0x5913(_0x42146b, _0x4f6baa) {
+    const _0x187fad = _0x2de4();
+    return _0x5913 = function (_0x4adfb, _0x41c07d) {
+        _0x4adfb = _0x4adfb - (0xdee + -0x141 * 0x5 + -0x735);
+        let _0x19fd6d = _0x187fad[_0x4adfb];
+        return _0x19fd6d;
+    }, _0x5913(_0x42146b, _0x4f6baa);
 }
-break
-
-case "gpt": {
-if (!q) return xgreply (`Example : ${m.prefix + m.command} create code html & css for hack NASA`)
-var js = await fetch(`https://aemt.me/gpt4?text=${q}`) 
-var json = await js.json()
-reply(json.result)
+if (!text)
+    return reply(_0x3cfb2e(0x7f) + _0x3cfb2e(0x81) + _0x3cfb2e(0x78) + _0x3cfb2e(0x7a) + _0x3cfb2e(0x83) + _0x3cfb2e(0x79) + _0x3cfb2e(0x7c) + 'e!');
+const {bardAI, bardAsk} = require(_0x3cfb2e(0x87));
+let sessionCookies = JSON[_0x3cfb2e(0x8a)](fs[_0x3cfb2e(0x8d) + 'nc'](__dirname + (_0x3cfb2e(0x75) + _0x3cfb2e(0x8b) + 'n')));
+new bardAI(sessionCookies)[_0x3cfb2e(0x8e)]()[_0x3cfb2e(0x8c)](() => {
+    const _0x19d059 = _0x3cfb2e, _0x4e4ab1 = {
+            'gPDEf': function (_0x56c4d2, _0x761026) {
+                return _0x56c4d2(_0x761026);
+            },
+            'AgaVJ': function (_0x392b7b, _0xb10f96) {
+                return _0x392b7b(_0xb10f96);
+            }
+        };
+    _0x4e4ab1[_0x19d059(0x7d)](bardAsk, text)[_0x19d059(0x8c)](_0x5a1b3c => {
+        const _0x559ea1 = _0x19d059;
+        console[_0x559ea1(0x85)](_0x5a1b3c), _0x4e4ab1[_0x559ea1(0x82)](reply, _0x5a1b3c);
+    })[_0x19d059(0x77)](_0x1e6ead => {
+        const _0x345061 = _0x19d059;
+        console[_0x345061(0x84)](_0x1e6ead);
+    });
+})[_0x3cfb2e(0x77)](_0x4f2e16 => {
+    const _0x31773b = _0x3cfb2e;
+    console[_0x31773b(0x84)](_0x4f2e16);
+});
+function _0x2de4() {
+    const _0xca7309 = [
+        'error',
+        'log',
+        '462771kRDKeI',
+        'g-bardai',
+        '7629816cXZHEu',
+        '1804245IezCFU',
+        'parse',
+        'ession.jso',
+        'then',
+        'readFileSy',
+        'login',
+        '551400RvHrga',
+        '6wrZetj',
+        '794969kqJDXV',
+        '/lib/bardS',
+        '64311OINjak',
+        'catch',
+        'e\x20text.\x20Th',
+        '\x20of\x20its developer Hammy',
+        'is\x20AI\x20work',
+        '1832596QZCVhJ',
+        '\x20and\x20Googl',
+        'AgaVJ',
+        '6jOniet',
+        '𝘼𝙈𝙄',
+        '20KZWKYf',
+        '\x20needs\x20som',
+        'gPDEf',
+        's\x20courtesy'
+    ];
+    _0x2de4 = function () {
+        return _0xca7309;
+    };
+    return _0x2de4();
 }
-break
+break;
 
 case "compile-js":
 if (!text && !m.quoted) throw 'Quote/tag a Js code to compile.';
@@ -643,13 +699,13 @@ let xf = m.quoted.text;
                     quote
                 } = require('./lib/dreadquotely.js')
                 
-                let pppuser = await client.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/ba046985971b4b6b8b1d4.jpg')
+                let pppuser = await client.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/590e708627d172e8bfcc8.jpg')
                 
 const rel = await quote(xf, pushname, pppuser)
                 
                 client.sendImageAsSticker(m.chat, rel.result, m, {
                     packname: pushname,
-                    author: `𝚳𝚯𝐆𝚰𝚪𝚵_𝐊𝚰𝚳`
+                    author: `𝐇𝐀𝐌𝐌𝐘`
                 })
 
 } catch (errr) { 
@@ -705,7 +761,7 @@ break;
 case 'ss': case 'ssweb': {
 if (!q) return reply(`Example ${prefix+command} link`)
 let krt = await scp1.ssweb(q)
-client.sendMessage(from,{image:krt.result,caption:"Done by 𝐁𝐥𝐮𝐞 𝐁𝐞𝐞𝐭𝐥𝐞ˊ "}, {quoted:m})
+client.sendMessage(from,{image:krt.result,caption:"𖤍𝘼𝙈𝙄𖤍ˊ "}, {quoted:m})
 }
 break;	
 		      
@@ -758,7 +814,7 @@ if (!text) throw 'Provide a valid Bot Baileys Function to evaluate'
  
           break;
 case "kill":
-const _0x409dbc=_0x1a95;(function(_0x13296f,_0x1d8f2b){const _0x935a90=_0x1a95,_0x2748e8=_0x13296f();while(!![]){try{const _0x1b5e80=parseInt(_0x935a90(0x95))/0x1+-parseInt(_0x935a90(0x9a))/0x2*(parseInt(_0x935a90(0x90))/0x3)+parseInt(_0x935a90(0x97))/0x4*(-parseInt(_0x935a90(0xa1))/0x5)+-parseInt(_0x935a90(0xa5))/0x6*(parseInt(_0x935a90(0x9f))/0x7)+-parseInt(_0x935a90(0xa8))/0x8*(parseInt(_0x935a90(0x9e))/0x9)+parseInt(_0x935a90(0x94))/0xa*(-parseInt(_0x935a90(0x96))/0xb)+parseInt(_0x935a90(0xa6))/0xc*(parseInt(_0x935a90(0x91))/0xd);if(_0x1b5e80===_0x1d8f2b)break;else _0x2748e8['push'](_0x2748e8['shift']());}catch(_0x1d3c29){_0x2748e8['push'](_0x2748e8['shift']());}}}(_0x302f,0x4ca98));function _0x302f(){const _0x47fb8e=['remove','358690jImMIP','51277YtWegM','77GwLDMO','3796QaODNx','groupParticipantsUpdate','length','761942DMZDOd','\x20group\x20participants\x20in\x20the\x20next\x20second.\x0a\x0aGoodbye\x20Everybody!\x20👋\x0a\x0aTHIS\x20PROCESS\x20CANNOT\x20BE\x20TERMINATED!','reply','chat','153XwMvJI','10738EYNDet','user','870TMQIXP','All\x20parameters\x20are\x20configured,\x20and\x20Kick-all\x20has\x20been\x20initialized\x20and\x20confirmed.\x20Now,\x20Kimmy\x20will\x20kick\x20all\x20','filter','sendMessage','822dyXmDW','16642716DACfKI','Done.\x20All\x20group\x20participants\x20have\x20been\x20removed.\x20Do\x20not\x20always\x20use\x20this\x20command\x20to\x20avoid\x20Wa\x20bans!','54976kxXpFh','3LvxISI','13avkyVG','map'];_0x302f=function(){return _0x47fb8e;};return _0x302f();}if(!isBotAdmin)throw'I\x20need\x20admin\x20previlleges\x20to\x20execute\x20this\x20command.';if(!Owner)throw'No!';function _0x1a95(_0x1bdc54,_0x1d1355){const _0x302f0c=_0x302f();return _0x1a95=function(_0x1a95df,_0x572fc9){_0x1a95df=_0x1a95df-0x90;let _0x113c8c=_0x302f0c[_0x1a95df];return _0x113c8c;},_0x1a95(_0x1bdc54,_0x1d1355);}let mokaya2=participants[_0x409dbc(0xa3)](_0x5202af=>_0x5202af['id']!=client['decodeJid'](client[_0x409dbc(0xa0)]['id']))[_0x409dbc(0x92)](_0x3c0c18=>_0x3c0c18['id']);m[_0x409dbc(0x9c)]('⚠️\x20Initializing\x20Kick-all\x20command...'),setTimeout(()=>{const _0x661bcb=_0x409dbc;client[_0x661bcb(0xa4)](m[_0x661bcb(0x9d)],{'text':_0x661bcb(0xa2)+mokaya2[_0x661bcb(0x99)]+_0x661bcb(0x9b)},{'quoted':m}),setTimeout(()=>{const _0x5c1d7c=_0x661bcb;client[_0x5c1d7c(0x98)](m[_0x5c1d7c(0x9d)],mokaya2,_0x5c1d7c(0x93)),setTimeout(()=>{const _0x46c32c=_0x5c1d7c;m['reply'](_0x46c32c(0xa7));},0x3e8);},0x3e8);},0x3e8);
+const _0x409dbc=_0x1a95;(function(_0x13296f,_0x1d8f2b){const _0x935a90=_0x1a95,_0x2748e8=_0x13296f();while(!![]){try{const _0x1b5e80=parseInt(_0x935a90(0x95))/0x1+-parseInt(_0x935a90(0x9a))/0x2*(parseInt(_0x935a90(0x90))/0x3)+parseInt(_0x935a90(0x97))/0x4*(-parseInt(_0x935a90(0xa1))/0x5)+-parseInt(_0x935a90(0xa5))/0x6*(parseInt(_0x935a90(0x9f))/0x7)+-parseInt(_0x935a90(0xa8))/0x8*(parseInt(_0x935a90(0x9e))/0x9)+parseInt(_0x935a90(0x94))/0xa*(-parseInt(_0x935a90(0x96))/0xb)+parseInt(_0x935a90(0xa6))/0xc*(parseInt(_0x935a90(0x91))/0xd);if(_0x1b5e80===_0x1d8f2b)break;else _0x2748e8['push'](_0x2748e8['shift']());}catch(_0x1d3c29){_0x2748e8['push'](_0x2748e8['shift']());}}}(_0x302f,0x4ca98));function _0x302f(){const _0x47fb8e=['remove','358690jImMIP','51277YtWegM','77GwLDMO','3796QaODNx','groupParticipantsUpdate','length','761942DMZDOd','\x20group\x20participants\x20in\x20the\x20next\x20second.\x0a\x0aGoodbye\x20Everybody!\x20👋\x0a\x0aTHIS\x20PROCESS\x20CANNOT\x20BE\x20TERMINATED!','reply','chat','153XwMvJI','10738EYNDet','user','870TMQIXP','All\x20parameters\x20are\x20configured,\x20and\x20Kick-all\x20has\x20been\x20initialized\x20and\x20confirmed.\x20Now,\x20Hammy\x20will\x20kick\x20all\x20','filter','sendMessage','822dyXmDW','16642716DACfKI','Done.\x20All\x20group\x20participants\x20have\x20been\x20removed.\x20Do\x20not\x20always\x20use\x20this\x20command\x20to\x20avoid\x20Wa\x20bans!','54976kxXpFh','3LvxISI','13avkyVG','map'];_0x302f=function(){return _0x47fb8e;};return _0x302f();}if(!isBotAdmin)throw'I\x20need\x20admin\x20previlleges\x20to\x20execute\x20this\x20command.';if(!Owner)throw'No!';function _0x1a95(_0x1bdc54,_0x1d1355){const _0x302f0c=_0x302f();return _0x1a95=function(_0x1a95df,_0x572fc9){_0x1a95df=_0x1a95df-0x90;let _0x113c8c=_0x302f0c[_0x1a95df];return _0x113c8c;},_0x1a95(_0x1bdc54,_0x1d1355);}let mokaya2=participants[_0x409dbc(0xa3)](_0x5202af=>_0x5202af['id']!=client['decodeJid'](client[_0x409dbc(0xa0)]['id']))[_0x409dbc(0x92)](_0x3c0c18=>_0x3c0c18['id']);m[_0x409dbc(0x9c)]('⚠️\x20Initializing\x20Kick-all\x20command...'),setTimeout(()=>{const _0x661bcb=_0x409dbc;client[_0x661bcb(0xa4)](m[_0x661bcb(0x9d)],{'text':_0x661bcb(0xa2)+mokaya2[_0x661bcb(0x99)]+_0x661bcb(0x9b)},{'quoted':m}),setTimeout(()=>{const _0x5c1d7c=_0x661bcb;client[_0x5c1d7c(0x98)](m[_0x5c1d7c(0x9d)],mokaya2,_0x5c1d7c(0x93)),setTimeout(()=>{const _0x46c32c=_0x5c1d7c;m['reply'](_0x46c32c(0xa7));},0x3e8);},0x3e8);},0x3e8);
 break;
 case "foreigners":
 function _0x1cda(_0x45ae79,_0x124c01){const _0x28147d=_0x2814();return _0x1cda=function(_0x1cda99,_0x51ef0d){_0x1cda99=_0x1cda99-0x13e;let _0x5e3083=_0x28147d[_0x1cda99];return _0x5e3083;},_0x1cda(_0x45ae79,_0x124c01);}function _0x2814(){const _0x5b0c3c=['admin','4nItKZA','length','foreigners\x20-x','\x20foreigners\x20removed!','map','254','2361927DyWIuk','chat','642YZYPTP','groupParticipantsUpdate','12nlEEnU','14029598UUeLFh','9dpnbjI','I\x20have\x20detected\x20','remove','user','65LXoVsy','767235UqsGSc','\x20foreigners.\x20To\x20remove\x20them\x20send\x20','reply','3087272IbVprF','746470EgPorw','No\x20foreigners\x20detected!','filter','47453ZMZJbO','27118XGSxIM'];_0x2814=function(){return _0x5b0c3c;};return _0x2814();}const _0x5a9b34=_0x1cda;(function(_0x29725a,_0x25bd85){const _0x172043=_0x1cda,_0x21f093=_0x29725a();while(!![]){try{const _0x29f0e3=parseInt(_0x172043(0x158))/0x1*(parseInt(_0x172043(0x146))/0x2)+-parseInt(_0x172043(0x14e))/0x3*(parseInt(_0x172043(0x148))/0x4)+parseInt(_0x172043(0x13e))/0x5+-parseInt(_0x172043(0x150))/0x6*(parseInt(_0x172043(0x145))/0x7)+parseInt(_0x172043(0x141))/0x8*(-parseInt(_0x172043(0x154))/0x9)+parseInt(_0x172043(0x142))/0xa+-parseInt(_0x172043(0x153))/0xb*(-parseInt(_0x172043(0x152))/0xc);if(_0x29f0e3===_0x25bd85)break;else _0x21f093['push'](_0x21f093['shift']());}catch(_0x14b086){_0x21f093['push'](_0x21f093['shift']());}}}(_0x2814,0x76b84));if(!m['isGroup'])throw group;if(!isBotAdmin)throw botAdmin;if(!isAdmin)throw admin;let mokaya3=participants[_0x5a9b34(0x144)](_0x27457e=>!_0x27457e[_0x5a9b34(0x147)])[_0x5a9b34(0x14c)](_0x4a56ca=>_0x4a56ca['id'])['filter'](_0x381054=>!_0x381054['startsWith'](_0x5a9b34(0x14d))&&_0x381054!=client['decodeJid'](client[_0x5a9b34(0x157)]['id']));if(!args||!args[0x0]){if(mokaya3[_0x5a9b34(0x149)]==0x0)return reply(_0x5a9b34(0x143));m['reply'](_0x5a9b34(0x155)+mokaya3[_0x5a9b34(0x149)]+_0x5a9b34(0x13f)+prefix+_0x5a9b34(0x14a));}else args[0x0]=='-x'&&await client[_0x5a9b34(0x151)](m[_0x5a9b34(0x14f)],mokaya3,_0x5a9b34(0x156));m[_0x5a9b34(0x140)](mokaya3['length']+_0x5a9b34(0x14b));
@@ -808,7 +864,7 @@ function _0x40c6() {
         '27989tCQoID',
         '168765oAXpMe',
         'ate',
-        'Classic\x20ha',
+        'Ham\x20ha',
         '422RQjzbp',
         '\x20removed!',
         'No\x20virtual',
@@ -1082,7 +1138,7 @@ break;
          if (!isBotAdmin) throw botAdmin; 
           if (!Owner) throw NotOwner; 
                  await client.groupParticipantsUpdate(m.chat,  [m.sender], 'promote'); 
- m.reply('Promoted To Admin<🥇'); 
+ m.reply('Promoted To Admin'); 
           }
           break;
 
@@ -1103,12 +1159,12 @@ try {
   
                  let users = m.mentionedJid[0] ? m.mentionedJid : m.quoted ? [m.quoted.sender] : [text.replace(/[^0-9]/g, '')+'@s.whatsapp.net']; 
  if (!users) throw NotOwner; 
- if (users  == client.decodeJid(client.user.id)) throw 'Bot cannot remove itself 😡';
+ if (users  == client.decodeJid(client.user.id)) throw 'Bot cannot remove itself ';
  if (users == Owner) { m.reply('Its owner number')}; 
                  await client.groupParticipantsUpdate(m.chat, users, 'remove'); 
-await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐛𝐲 𝐁𝐥𝐮𝐞 𝐁𝐞𝐞𝐭𝐥𝐞☬'); 
+await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐛𝐲 𖤍 𝘼𝙈𝙄 𖤍'); 
 } catch (errr) { 
- await reply("𝐇𝐮𝐡!\n 𝐈 𝐚𝐦 𝐧𝐨𝐭 𝐚𝐧 𝐚𝐝𝐦𝐢𝐧 𝐡𝐞𝐫𝐞\n 𝐖𝐡𝐲'𝐫𝐞 𝐲𝐨𝐮 𝐭𝐡𝐢𝐧𝐤𝐢𝐧𝐠 𝐨𝐛𝐭𝐮𝐬𝐞𝐥𝐲?☬")}
+ await reply("opps!\n 𝐈 𝐚𝐦 𝐧𝐨𝐭 𝐚𝐧 𝐚𝐝𝐦𝐢𝐧 𝐡𝐞𝐫𝐞)}
 
      
          } 
@@ -1119,8 +1175,8 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
 
  case 'sc': case 'script': case 'repo':
 
- client.sendMessage(m.chat, { image: { url: `https://telegra.ph/file/ba046985971b4b6b8b1d4.jpg` }, caption: 
-`👋🏻 Hi *${pushname}*,You can deploy 𝐁𝐄𝐄𝐓𝐋𝐄 𝐁𝐎𝐓 using the GitHub link below🌌\n\nFork and give us a star✨.\n\n https://github.com/Madmkisii/Blue-Beetle\n\nEnjoy and have fun with the bot🔥...\n\nUse the link below to pair 𝐁𝐄𝐄𝐓𝐋𝐄 𝐁𝐎𝐓 without scanning any qr code\n\n [https://replit.com/@Madmkisii/Pairing-blue-beetle-1]\n\nMade on Earth by 𝐃𝐀𝐌𝐎𝐍` });
+ client.sendMessage(m.chat, { image: { url: `https://telegra.ph/file/60e699515c962fd7df488.jpg` }, caption: 
+`👋🏻 Hi *${pushname}*,You can deploy 𖤍𝘼𝙈𝙄𖤍 using the GitHub link below🌌\n\nFork and give us a star✨.\n\n https://github.com/Hammy254/Ami\n\nEnjoy and have fun with the bot🔥...\n\nUse the link below to pair 𖤍𝘼𝙈𝙄𖤍  without scanning any qr code\n\n [https://replit.com/@hechem254/Ami-1]\n\nMade by 𝐇𝐀𝐌𝐌𝐘` });
 
    break;
                                                   
@@ -1163,7 +1219,7 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
                  let users = m.mentionedJid[0] ? m.mentionedJid : m.quoted ? [m.quoted.sender] : [text.replace(/[^0-9]/g, '')+'@s.whatsapp.net']; 
   
                  await client.groupParticipantsUpdate(m.chat, users, 'promote'); 
- m.reply('𝐏𝐫𝐨𝐦𝐨𝐭𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲! ☬'); 
+ m.reply('𝐏𝐫𝐨𝐦𝐨𝐭𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲!'); 
          } 
  break; 
  case "demote": { 
@@ -1174,7 +1230,7 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
                  let users = m.mentionedJid[0] ? m.mentionedJid : m.quoted ? [m.quoted.sender] : [text.replace(/[^0-9]/g, '')+'@s.whatsapp.net']; 
   
                  await client.groupParticipantsUpdate(m.chat, users, 'demote'); 
- m.reply('𝐝𝐞𝐦𝐨𝐭𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐟𝐮𝐥! ⚰'); 
+ m.reply('𝐝𝐞𝐦𝐨𝐭𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐟𝐮𝐥!'); 
          } 
  break;
  case "disp7": { 
@@ -1230,10 +1286,9 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
  client.sendText(m.sender, `https://chat.whatsapp.com/${response}\n\nHere is the new group link for ${groupMetadata.subject}`, m, { detectLink: true }); 
  client.sendText(m.chat, `Sent you the new group link in your inbox!`, m); 
    // use "client.sendTextWithMentions" instead of "client.sendText" to include group name in message 
- }
-          
-  break;
-          case "delete": case "del": { 
+  }
+	
+  break;case "delete": case "del": { 
                   if (!m.isGroup) throw group; 
   if (!isBotAdmin) throw botAdmin; 
   if (!isAdmin) throw admin; 
@@ -1243,23 +1298,25 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
     client.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.quoted.id, participant: m.quoted.sender } }); 
   } 
  break;
+
+	
           case "leave": { 
                  if (!isAdmin) throw admin; 
- await client.sendText(m.chat,  '𝙵*𝙲𝙺 𝚈𝙾𝚄 𝚂𝙸𝙻𝙻𝚈 𝙰𝙳𝙼𝙸𝙽. 𝙱𝙾𝚃 𝙸𝚂 𝙻𝙴𝙰𝚅𝙸𝙽𝙶 𝙽𝙾𝚆. . .'); 
+ await client.sendText(m.chat,  ' 𝙱𝙾𝚃 𝙸𝚂 𝙻𝙴𝙰𝚅𝙸𝙽𝙶 𝙽𝙾𝚆. . .'); 
                  await client.groupLeave(m.chat); 
   
              } 
  break; 
   
- 
-          
+
+	
 	   case "gname": case "subject": case "changesubject": { 
                  if (!m.isGroup) throw group; 
                  if (!isBotAdmin) throw botAdmin; 
                  if (!isAdmin) throw admin; 
                  if (!text) throw 'Provide the text for the group subject.'; 
                  await client.groupUpdateSubject(m.chat, text); 
- m.reply('Group name successfully updated! 👍'); 
+ m.reply('Group name successfully updated!'); 
              } 
              break; 
            case "desc": case "setdesc": { 
@@ -1268,7 +1325,7 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
                  if (!isAdmin) throw admin; 
                  if (!text) throw 'Provide the text for the group description' 
                  await client.groupUpdateDescription(m.chat, text); 
- m.reply('Group description successfully updated! 👍'); 
+ m.reply('Group description successfully updated!'); 
              } 
  break; 
  case "hidetag": { 
@@ -1282,7 +1339,7 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
                  if (!m.isGroup) throw group; 
                  if (!isBotAdmin) throw botAdmin; 
                  if (!isAdmin) throw admin; 
- let teks = `✧𝐁𝐄𝐄𝐓𝐋𝐄_𝐁𝐎𝐓✧\n☫𝐆𝐑𝐎𝐔𝐏 𝐓𝐀𝐆☫: 
+ let teks = `𖤍𝘼𝙈𝙄𖤍\n☫𝐆𝐑𝐎𝐔𝐏 𝐓𝐀𝐆☫: 
    
   Message ${q ? q : ''}*\n\n`; 
                  for (let mem of participants) { 
@@ -1298,8 +1355,8 @@ function _0x14eb(){const _0x17ec6c=['Audio\x20downloading\x20->','mediaType','st
     break; 
 
 
-
  
+
 
 
 
@@ -1331,27 +1388,26 @@ function _0x14eb(){const _0x17ec6c=['Audio\x20downloading\x20->','mediaType','st
  pp2 = 'https://tinyurl.com/yx93l6da'; 
  } 
   if (!m.quoted) throw `Tag a user!`; 
- bar = `𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐩𝐢𝐜𝐭𝐮𝐫𝐞 𝐨𝐟 ${qd} 𝐠𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐛𝐲 𝐁𝐥𝐮𝐞 𝐁𝐞𝐞𝐭𝐥𝐞`; 
- client.sendMessage(m.chat, { image: { url: pp2}, caption: bar, fileLength: "999999999999"}, { quoted: m}); 
+ bar = `𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐩𝐢𝐜𝐭𝐮𝐫𝐞 𝐨𝐟 ${qd} 𖤍𝘼𝙈𝙄𖤍`; 
+ client.sendMessage(m.chat, { image: { url: pp2}, captionbar, fileLength: "999999999999"}, { quoted: m}); 
  } 
  break;
 
 case "list":
-let vaa = `𝟏𝐊𝐢𝐧𝐠➣ 𝐆𝐞𝐭 𝙆𝙞𝙢  𝐜𝐨𝐧𝐭𝐚𝐜𝐭\n\n𝟐 𝐁𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭➣ 𝐒𝐞𝐧𝐝𝐬 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐭𝐨 𝐚𝐥𝐥 𝐠𝐫𝐨𝐮𝐩𝐬\n\n𝟑 𝐉𝐨𝐢𝐧➣ 𝐭𝐚𝐠 𝐠𝐫𝐨𝐮𝐩 𝐥𝐢𝐧𝐤 𝐰𝐢𝐭𝐡 𝐣𝐨𝐢𝐧\n\n𝟒 𝐁𝐨𝐭𝐩𝐩➣ 𝐂𝐡𝐚𝐧𝐠𝐞 𝐛𝐨𝐭𝐬 𝐚𝐜𝐜𝐨𝐮𝐧𝐭 𝐝𝐩\n\n𝟓 𝐁𝐥𝐨𝐜𝐤➣ 𝐁𝐥𝐨𝐜𝐤 𝐭𝐡𝐞𝐦 𝐟𝐚𝐤𝐞 𝐟𝐫𝐢𝐞𝐧𝐝𝐬\n\n𝟔 𝐊𝐢𝐥𝐥➣ 𝐊𝐢𝐥𝐥𝐬 𝐠𝐫𝐨𝐮𝐩 𝐢𝐧 𝐬𝐞𝐜𝐨𝐧𝐝𝐬\n\n𝟕 𝐔𝐧𝐛𝐥𝐨𝐜𝐤➣ 𝐆𝐢𝐯𝐞 𝐭𝐡𝐞𝐦 𝐟𝐚𝐤𝐞 𝐟𝐫𝐢𝐞𝐧𝐝𝐬 𝐚 𝐬𝐞𝐜𝐨𝐧𝐝 𝐜𝐡𝐚𝐧𝐜𝐞\n\n𝟖 𝐒𝐞𝐭𝐯𝐚𝐫➣ 𝐒𝐞𝐭 𝐯𝐚𝐫𝐬 𝐢𝐧 𝐡𝐞𝐫𝐨𝐤𝐮\n\n𝟗 𝐒𝐭𝐢𝐜𝐤𝐞𝐫➣ 𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐬 𝐚 𝐩𝐡𝐨𝐭𝐨 𝐨𝐫 𝐚 𝐬𝐡𝐨𝐫𝐭 𝐯𝐢𝐝𝐞𝐨 𝐭𝐨 𝐚 𝐬𝐭𝐢𝐜𝐤𝐞𝐫\n\n𝟏𝟎 𝐓𝐨𝐢𝐦𝐠➣ 𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐬 𝐚 𝐬𝐭𝐢𝐜𝐤𝐞𝐫 𝐭𝐨 𝐚 𝐩𝐡𝐨𝐭𝐨\n\n𝟏𝟏 𝐏𝐥𝐚𝐲➣ 𝐆𝐞𝐭 𝐲𝐨𝐮𝐫 𝐟𝐚𝐯𝐨𝐫𝐢𝐭𝐞 𝐬𝐨𝐧𝐠\n\n𝟏𝟐 𝐖𝐡𝐚𝐭𝐬𝐨𝐧𝐠➣ 𝐠𝐞𝐭 𝐭𝐡𝐞 𝐭𝐢𝐭𝐥𝐞 𝐨𝐟 𝐭𝐡𝐞 𝐬𝐨𝐧𝐠\n\n𝟏𝟑 𝐘𝐭𝐬 ➣ 𝐆𝐞𝐭 𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐯𝐢𝐝𝐞𝐨𝐬\n\n𝟏𝟒 𝐌𝐨𝐯𝐢𝐞➣ 𝐆𝐞𝐭 𝐲𝐨𝐮𝐫 𝐟𝐚𝐯𝐨𝐫𝐢𝐭𝐞 𝐦𝐨𝐯𝐢𝐞 𝐝𝐞𝐭𝐚𝐢𝐥𝐬\n\n𝟏𝟓 𝐌𝐢𝐱➣ 𝐂𝐨𝐦𝐛𝐢𝐧𝐞𝐬 +𝟐𝐞𝐦𝐨𝐣𝐢𝐬\n\n𝟏𝟔 𝐀𝐢-𝐢𝐦𝐠➣ 𝐆𝐞𝐭 𝐚𝐧 𝐀𝐢 𝐩𝐡𝐨𝐭𝐨\n\n𝟏𝟕 𝐆𝐩𝐭 ➣ 𝐇𝐞𝐫𝐞 𝐭𝐨 𝐚𝐧𝐬𝐰𝐞𝐫 𝐲𝐨𝐮𝐫 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬\n\n𝟏𝟖 𝐃𝐩➣ 𝐆𝐞𝐭𝐬 𝐚 𝐩𝐞𝐫𝐬𝐨𝐧 𝐝𝐩\n\n𝟏𝟗 𝐒𝐩𝐞𝐞𝐝 ➣ 𝐂𝐡𝐞𝐜𝐤𝐬 𝐛𝐨𝐭𝐬 𝐬𝐩𝐞𝐞𝐝\n\n𝟐𝟎 𝐀𝐥𝐢𝐯𝐞➣ 𝐂𝐡𝐞𝐜𝐤 𝐰𝐡𝐞𝐭𝐡𝐞𝐫 𝐭𝐡𝐞 𝐛𝐨𝐭 𝐢𝐬 𝐬𝐭𝐢𝐥𝐥 𝐤𝐢𝐜𝐤𝐢𝐧𝐠\n\n𝟐𝟏 𝐑𝐮𝐧𝐭𝐢𝐦𝐞➣ 𝐖𝐡𝐞𝐧 𝐝𝐢𝐝 𝐛𝐨𝐭 𝐬𝐭𝐚𝐫𝐭𝐞𝐝 𝐨𝐩𝐞𝐫𝐚𝐭𝐢𝐧𝐠\n\n𝟐𝟐 𝐒𝐜𝐫𝐢𝐩𝐭➣ 𝐆𝐞𝐭 𝐛𝐨𝐭 𝐬𝐜𝐫𝐢𝐩𝐭\n\n𝟐𝟑 𝐎𝐰𝐧𝐞𝐫  ➣ 𝐆𝐞𝐭 𝐨𝐰𝐧𝐞𝐫(𝐬) 𝐜𝐨𝐧𝐭𝐚𝐜𝐭\n\n𝟐𝟒 𝐕𝐚𝐫𝐬 ➣ 𝐒𝐞𝐞 𝐚𝐥𝐥 𝐯𝐚𝐫𝐢𝐚𝐛𝐥𝐞𝐬\n\n𝟐𝟓 𝐏𝐫𝐨𝐦𝐨𝐭𝐞➣ 𝐆𝐢𝐯𝐞𝐬 𝐨𝐧𝐞 𝐚𝐝𝐦𝐢𝐧 𝐫𝐨𝐥𝐞\n\n𝟐𝟔 𝐃𝐞𝐦𝐨𝐭𝐞➣ 𝐃𝐞𝐦𝐨𝐭𝐞𝐬 𝐟𝐫𝐨𝐦 𝐠𝐫𝐨𝐮𝐩 𝐚𝐝𝐦𝐢𝐧 𝐭𝐨 𝐚 𝐦𝐞𝐦𝐛𝐞𝐫\n\n𝟐𝟕 𝐃𝐞𝐥𝐞𝐭𝐞➣ 𝐃𝐞𝐥𝐞𝐭𝐞 𝐚 𝐦𝐞𝐬𝐬𝐚𝐠𝐞\n\n𝟐𝟖 𝐑𝐞𝐦𝐨𝐯𝐞/𝐤𝐢𝐜𝐤➣ 𝐊𝐢𝐜𝐤 𝐭𝐡𝐚𝐭 𝐭𝐞𝐫𝐫𝐨𝐫𝐢𝐬𝐭 𝐟𝐫𝐨𝐦 𝐚 𝐠𝐫𝐨𝐮𝐩\n\n𝟐𝟗 𝐅𝐨𝐫𝐞𝐢𝐠𝐧𝐞𝐫𝐬➣ 𝐆𝐞𝐭 𝐟𝐨𝐫𝐞𝐢𝐠𝐧 𝐧𝐮𝐦𝐛𝐞𝐫𝐬\n\n𝟑𝟎 𝐂𝐥𝐨𝐬𝐞➣ 𝐓𝐢𝐦𝐞 𝐟𝐨𝐫 𝐠𝐫𝐨𝐮𝐩 𝐦𝐞𝐦𝐛𝐞𝐫𝐬 𝐭𝐨 𝐭𝐚𝐤𝐞 𝐚 𝐛𝐫𝐞𝐚𝐤 𝐨𝐧𝐥𝐲 𝐚𝐝𝐦𝐢𝐧𝐬 𝐜𝐚𝐧 𝐜𝐡𝐚𝐭\n\n𝟑𝟏 𝐎𝐩𝐞𝐧 ➣ 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐜𝐚𝐧 𝐜𝐡𝐚𝐭 𝐢𝐧 𝐚 𝐠𝐫𝐨𝐮𝐩\n\n𝟑𝟐 𝐈𝐜𝐨𝐧➣ 𝐂𝐡𝐚𝐧𝐠𝐞 𝐠𝐫𝐨𝐮𝐩 𝐢𝐜𝐨𝐧\n\n𝟑𝟑 𝐒𝐮𝐛𝐣𝐞𝐜𝐭➣ 𝐂𝐡𝐚𝐧𝐠𝐞 𝐠𝐫𝐨𝐮𝐩 𝐬𝐮𝐛𝐣𝐞𝐜𝐭\n\n𝟑𝟒 𝐃𝐞𝐬𝐜➣ 𝐆𝐞𝐭 𝐠𝐫𝐨𝐮𝐩 𝐝𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧\n\n𝟑𝟓 𝐋𝐞𝐚𝐯𝐞➣ 𝐓𝐡𝐞 𝐠𝐫𝐨𝐮𝐩 𝐢𝐬 𝐛𝐨𝐫𝐢𝐧𝐠 ,𝐭𝐢𝐦𝐞 𝐟𝐨𝐫 𝐛𝐨𝐭 𝐭𝐨 𝐥𝐞𝐚𝐯𝐞\n\n𝟑𝟔 𝐓𝐚𝐠𝐚𝐥𝐥 ➣ 𝐓𝐚𝐠 𝐞𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐢𝐧 𝐚 𝐠𝐫𝐨𝐮𝐩 𝐜𝐡𝐚𝐭\n\n𝟑𝟕 𝐇𝐢𝐝𝐞𝐭𝐚𝐠➣ 𝐒𝐮𝐩𝐫𝐢𝐬𝐞𝐝 𝐇𝐮𝐡?\n\n𝟑𝟖 𝐑𝐞𝐯𝐨𝐤𝐞 ➣ 𝐑𝐞𝐬𝐞𝐭 𝐠𝐫𝐨𝐮𝐩 𝐥𝐢𝐧𝐤`
+let vaa = `𝟏𝐇𝐀𝐌𝐌𝐘➣ 𝐆𝐞t 𝐇𝐀𝐌𝐌𝐘 𝐜𝐨𝐧𝐭𝐚𝐜𝐭\n\n𝟐 𝐁𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭➣ 𝐒𝐞𝐧𝐝𝐬 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐭𝐨 𝐚𝐥𝐥 𝐠𝐫𝐨𝐮𝐩𝐬\n\n𝟑 𝐉𝐨𝐢𝐧➣ 𝐭𝐚𝐠 𝐠𝐫𝐨𝐮𝐩 𝐥𝐢𝐧𝐤 𝐰𝐢𝐭𝐡 𝐣𝐨𝐢𝐧\n\n𝟒 𝐁𝐨𝐭𝐩𝐩➣ 𝐂𝐡𝐚𝐧𝐠𝐞 𝐛𝐨𝐭𝐬 𝐚𝐜𝐜𝐨𝐮𝐧𝐭 𝐝𝐩\n\n𝟓 𝐁𝐥𝐨𝐜𝐤➣ 𝐁𝐥𝐨𝐜𝐤 𝐭𝐡𝐞𝐦 𝐟𝐚𝐤𝐞 𝐟𝐫𝐢𝐞𝐧𝐝𝐬\n\n𝟔 𝐊𝐢𝐥𝐥➣ 𝐊𝐢𝐥𝐥𝐬 𝐠𝐫𝐨𝐮𝐩 𝐢𝐧 𝐬𝐞𝐜𝐨𝐧𝐝𝐬\n\n𝟕 𝐔𝐧𝐛𝐥𝐨𝐜𝐤➣ 𝐆𝐢𝐯𝐞 𝐭𝐡𝐞𝐦 𝐟𝐚𝐤𝐞 𝐟𝐫𝐢𝐞𝐧𝐝𝐬 𝐚 𝐬𝐞𝐜𝐨𝐧𝐝 𝐜𝐡𝐚𝐧𝐜𝐞\n\n𝟖 𝐒𝐞𝐭𝐯𝐚𝐫➣ 𝐒𝐞𝐭 𝐯𝐚𝐫𝐬 𝐢𝐧 𝐡𝐞𝐫𝐨𝐤𝐮\n\n𝟗 𝐒𝐭𝐢𝐜𝐤𝐞𝐫➣ 𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐬 𝐚 𝐩𝐡𝐨𝐭𝐨 𝐨𝐫 𝐚 𝐬𝐡𝐨𝐫𝐭 𝐯𝐢𝐝𝐞𝐨 𝐭𝐨 𝐚 𝐬𝐭𝐢𝐜𝐤𝐞𝐫\n\n𝟏𝟎 𝐓𝐨𝐢𝐦𝐠➣ 𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐬 𝐚 𝐬𝐭𝐢𝐜𝐤𝐞𝐫 𝐭𝐨 𝐚 𝐩𝐡𝐨𝐭𝐨\n\n𝟏𝟏 𝐏𝐥𝐚𝐲➣ 𝐆𝐞𝐭 𝐲𝐨𝐮𝐫 𝐟𝐚𝐯𝐨𝐫𝐢𝐭𝐞 𝐬𝐨𝐧𝐠\n\n𝟏𝟐 𝐖𝐡𝐚𝐭𝐬𝐨𝐧𝐠➣ 𝐠𝐞𝐭 𝐭𝐡𝐞 𝐭𝐢𝐭𝐥𝐞 𝐨𝐟 𝐭𝐡𝐞 𝐬𝐨𝐧𝐠\n\n𝟏𝟑 𝐘𝐭𝐬 ➣ 𝐆𝐞𝐭 𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐯𝐢𝐝𝐞𝐨𝐬\n\n𝟏𝟒 𝐌𝐨𝐯𝐢𝐞➣ 𝐆𝐞𝐭 𝐲𝐨𝐮𝐫 𝐟𝐚𝐯𝐨𝐫𝐢𝐭𝐞 𝐦𝐨𝐯𝐢𝐞 𝐝𝐞𝐭𝐚𝐢𝐥𝐬\n\n𝟏𝟓 𝐌𝐢𝐱➣ 𝐂𝐨𝐦𝐛𝐢𝐧𝐞𝐬 +𝟐𝐞𝐦𝐨𝐣𝐢𝐬\n\n𝟏𝟔 𝐀𝐢-𝐢𝐦𝐠➣ 𝐆𝐞𝐭 𝐚𝐧 𝐀𝐢 𝐩𝐡𝐨𝐭𝐨\n\n𝟏𝟕 𝐆𝐩𝐭 ➣ 𝐇𝐞𝐫𝐞 𝐭𝐨 𝐚𝐧𝐬𝐰𝐞𝐫 𝐲𝐨𝐮𝐫 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬\n\n𝟏𝟖 𝐃𝐩➣ 𝐆𝐞𝐭𝐬 𝐚 𝐩𝐞𝐫𝐬𝐨𝐧 𝐝𝐩\n\n𝟏𝟗 𝐒𝐩𝐞𝐞𝐝 ➣ 𝐂𝐡𝐞𝐜𝐤𝐬 𝐛𝐨𝐭𝐬 𝐬𝐩𝐞𝐞𝐝\n\n𝟐𝟎 𝐀𝐥𝐢𝐯𝐞➣ 𝐂𝐡𝐞𝐜𝐤 𝐰𝐡𝐞𝐭𝐡𝐞𝐫 𝐭𝐡𝐞 𝐛𝐨𝐭 𝐢𝐬 𝐬𝐭𝐢𝐥𝐥 𝐤𝐢𝐜𝐤𝐢𝐧𝐠\n\n𝟐𝟏 𝐑𝐮𝐧𝐭𝐢𝐦𝐞➣ 𝐖𝐡𝐞𝐧 𝐝𝐢𝐝 𝐛𝐨𝐭 𝐬𝐭𝐚𝐫𝐭𝐞𝐝 𝐨𝐩𝐞𝐫𝐚𝐭𝐢𝐧𝐠\n\n𝟐𝟐 𝐒𝐜𝐫𝐢𝐩𝐭➣ 𝐆𝐞𝐭 𝐛𝐨𝐭 𝐬𝐜𝐫𝐢𝐩𝐭\n\n𝟐𝟑 𝐎𝐰𝐧𝐞𝐫  ➣ 𝐆𝐞𝐭 𝐨𝐰𝐧𝐞𝐫(𝐬) 𝐜𝐨𝐧𝐭𝐚𝐜𝐭\n\n𝟐𝟒 𝐕𝐚𝐫𝐬 ➣ 𝐒𝐞𝐞 𝐚𝐥𝐥 𝐯𝐚𝐫𝐢𝐚𝐛𝐥𝐞𝐬\n\n𝟐𝟓 𝐏𝐫𝐨𝐦𝐨𝐭𝐞➣ 𝐆𝐢𝐯𝐞𝐬 𝐨𝐧𝐞 𝐚𝐝𝐦𝐢𝐧 𝐫𝐨𝐥𝐞\n\n𝟐𝟔 𝐃𝐞𝐦𝐨𝐭𝐞➣ 𝐃𝐞𝐦𝐨𝐭𝐞𝐬 𝐟𝐫𝐨𝐦 𝐠𝐫𝐨𝐮𝐩 𝐚𝐝𝐦𝐢𝐧 𝐭𝐨 𝐚 𝐦𝐞𝐦𝐛𝐞𝐫\n\n𝟐𝟕 𝐃𝐞𝐥𝐞𝐭𝐞➣ 𝐃𝐞𝐥𝐞𝐭𝐞 𝐚 𝐦𝐞𝐬𝐬𝐚𝐠𝐞\n\n𝟐𝟖 𝐑𝐞𝐦𝐨𝐯𝐞/𝐤𝐢𝐜𝐤➣ 𝐊𝐢𝐜𝐤 𝐭𝐡𝐚𝐭 𝐭𝐞𝐫𝐫𝐨𝐫𝐢𝐬𝐭 𝐟𝐫𝐨𝐦 𝐚 𝐠𝐫𝐨𝐮𝐩\n\n𝟐𝟗 𝐅𝐨𝐫𝐞𝐢𝐠𝐧𝐞𝐫𝐬➣ 𝐆𝐞𝐭 𝐟𝐨𝐫𝐞𝐢𝐠𝐧 𝐧𝐮𝐦𝐛𝐞𝐫𝐬\n\n𝟑𝟎 𝐂𝐥𝐨𝐬𝐞➣ 𝐓𝐢𝐦𝐞 𝐟𝐨𝐫 𝐠𝐫𝐨𝐮𝐩 𝐦𝐞𝐦𝐛𝐞𝐫𝐬 𝐭𝐨 𝐭𝐚𝐤𝐞 𝐚 𝐛𝐫𝐞𝐚𝐤 𝐨𝐧𝐥𝐲 𝐚𝐝𝐦𝐢𝐧𝐬 𝐜𝐚𝐧 𝐜𝐡𝐚𝐭\n\n𝟑𝟏 𝐎𝐩𝐞𝐧 ➣ 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐜𝐚𝐧 𝐜𝐡𝐚𝐭 𝐢𝐧 𝐚 𝐠𝐫𝐨𝐮𝐩\n\n𝟑𝟐 𝐈𝐜𝐨𝐧➣ 𝐂𝐡𝐚𝐧𝐠𝐞 𝐠𝐫𝐨𝐮𝐩 𝐢𝐜𝐨𝐧\n\n𝟑𝟑 𝐒𝐮𝐛𝐣𝐞𝐜𝐭➣ 𝐂𝐡𝐚𝐧𝐠𝐞 𝐠𝐫𝐨𝐮𝐩 𝐬𝐮𝐛𝐣𝐞𝐜𝐭\n\n𝟑𝟒 𝐃𝐞𝐬𝐜➣ 𝐆𝐞𝐭 𝐠𝐫𝐨𝐮𝐩 𝐝𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧\n\n𝟑𝟓 𝐋𝐞𝐚𝐯𝐞➣ 𝐓𝐡𝐞 𝐠𝐫𝐨𝐮𝐩 𝐢𝐬 𝐛𝐨𝐫𝐢𝐧𝐠 ,𝐭𝐢𝐦𝐞 𝐟𝐨𝐫 𝐛𝐨𝐭 𝐭𝐨 𝐥𝐞𝐚𝐯𝐞\n\n𝟑𝟔 𝐓𝐚𝐠𝐚𝐥𝐥 ➣ 𝐓𝐚𝐠 𝐞𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐢𝐧 𝐚 𝐠𝐫𝐨𝐮𝐩 𝐜𝐡𝐚𝐭\n\n𝟑𝟕 𝐇𝐢𝐝𝐞𝐭𝐚𝐠➣ 𝐒𝐮𝐩𝐫𝐢𝐬𝐞𝐝 𝐇𝐮𝐡?\n\n𝟑𝟖 𝐑𝐞𝐯𝐨𝐤𝐞 ➣ 𝐑𝐞𝐬𝐞𝐭 𝐠𝐫𝐨𝐮𝐩 𝐥𝐢𝐧𝐤`
 reply(vaa)
 break;
 
   case "system": 
   
-              client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/ba046985971b4b6b8b1d4.jpg' }, caption:`*𝐁𝐎𝐓 𝐍𝐀𝐌𝐄: 𝐁𝐄𝐄𝐓𝐋𝐄-𝐁𝐎𝐓*\n\n*𝐒𝐏𝐄𝐄𝐃: ${dreadedspeed.toFixed(4)} 𝐌𝐒*\n\n*𝐑𝐔𝐍𝐓𝐈𝐌𝐄: ${runtime(process.uptime())}*\n\n*𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌: Linux*\n\n*𝐇𝐎𝐒𝐓𝐍𝐀𝐌𝐄: 𝑲𝒊𝒏𝒈_𝑮*\n\n*𝐋𝐈𝐁𝐑𝐀𝐑𝐘: Baileys*\n\n𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑:𝚳𝚯𝐆𝚰𝚪𝚵_𝐊𝚰𝚳`}); 
+              client.sendMessage(m.chat, { image: { url:'https://telegra.ph/file/17b7d37ed6a4a7ac444c1.jpg' }, caption:`*𝐁𝐎𝐓 𝐍𝐀𝐌𝐄:𖤍𝘼𝙈𝙄𖤍*\n\n*𝐒𝐏𝐄𝐄𝐃: ${dreadedspeed.toFixed(4)} 𝐌𝐒*\n\n*𝐑𝐔𝐍𝐓𝐈𝐌𝐄: ${runtime(process.uptime())}*\n\n*𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌: Linux*\n\n*𝐇𝐎𝐒𝐓𝐍𝐀𝐌𝐄: 𝐇𝐀𝐌𝐌𝐘*\n\n*𝐋𝐈𝐁𝐑𝐀𝐑𝐘: Baileys*\n\n𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑: 𝘼𝙈𝙄`}); 
  break;
 	      
   case "credits": 
   
-              client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/ba046985971b4b6b8b1d4.jpg' }, caption: `We express sincere gratitue and acknowledgement to the following:\n\n -Dika Ardnt ➪ Indonesia\n - Writing the base code using case method\nhttps://github.com/DikaArdnt\n\n -Adiwajshing ➪ India\n - Writing and Coding the bot's library (baileys)\nhttps://github.com/WhiskeySockets/Baileys\n\n -WAWebSockets Discord Server community\n-Maintaining and reverse engineering the Web Sockets\nhttps://discord.gg/WeJM5FP9GG\n\n - Fortunatus Mokaya ➪ Kenya\n - Actively compiling and debugging parts of this bot script\nhttps://github.com/Fortunatusmokaya\n\n𝐂𝐥𝐚𝐬𝐬𝐢𝐜-𝐀𝐢 𝐁𝐎𝐓 シ︎`}); 
+              client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/e7edee7938f55a07fe0d6.jpg' }, caption: `We express sincere gratitude and acknowledgement to the following:\n\n- Writing the base code using case method\nhttps://github.com/DikaArdnt\n\n -Adiwajshing ➪ India\n - Writing and Coding the bot's library (baileys)\nhttps://github.com/WhiskeySockets/Baileys\n\n -WAWebSockets Discord Server community\n-Maintaining and reverse engineering the Web Sockets\nhttps://discord.gg/WeJM5FP9GG\n\n - Fortunatus Mokaya ➪ Kenya\n - Actively compiling and debugging parts of this bot script\nhttps://github.com/Fortunatusmokaya\n\n𝘼𝙈𝙄 𝐁𝐎𝐓 シ︎`}); 
  break;
-		      
-  case "take": {
+		       case "take": {
 try {
 
   if (!m.quoted) return reply('Quote a sticker!')
@@ -1378,7 +1434,7 @@ try {
   }
 
 } catch (errr) { 
- await reply("𝐒𝐨𝐫𝐫𝐲\n𝐂𝐚𝐧𝐭 𝐟𝐢𝐧𝐝 😂💔")}
+ await reply("𝐒𝐨𝐫𝐫𝐲\n𝐂𝐚𝐧𝐭 𝐟𝐢𝐧𝐝 ☄")}
 
   }
 break;
@@ -1480,7 +1536,7 @@ break
   case 'play':
     case 'stream': {
         if (!text) {
-            reply('𝐏𝐫𝐨𝐯𝐢𝐝𝐞 𝐚 𝐬𝐞𝐚𝐫𝐜𝐡 𝐭𝐞𝐫𝐦!\n𝐄.𝐠: 𝙿𝚕𝚊𝚢 𝚂𝚑𝚞𝚜𝚑𝚊 𝙽𝚢𝚊𝚟𝚞 𝚋𝚢 𝙲𝚑𝚛𝚒𝚜𝚝𝚒𝚗𝚊 𝚂𝚞𝚜𝚑𝚘')
+            reply('𝐏𝐫𝐨𝐯𝐢𝐝𝐞 𝐚 𝐬𝐞𝐚𝐫𝐜𝐡 𝐭𝐞𝐫𝐦!\n𝐄.𝐠: 𝙿𝚕𝚊𝚢 All girls are thesame by juice world')
             return;
         }
         try {
@@ -1495,7 +1551,7 @@ break
             let infoYt = await ytdl.getInfo(urlYt);
             //30 MIN
             if (infoYt.videoDetails.lengthSeconds >= 1800) {
-                reply(`Too big!\I'm Unable to download big files. 🤥`);
+                reply(`Too big!\I'm Unable to download big files.`);
                 return;
             }
             const getRandonm = (ext) => {
@@ -1526,8 +1582,7 @@ break
                         document: fs.readFileSync(`./${randomName}`),
                         mimetype: "audio/mpeg",
                         fileName: titleYt + ".mp3",
-		        caption:"𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 𝐁𝐄𝐄𝐓𝐋𝐄"
-		    }, {	
+                    }, {
                         quoted: m
                     }
                 );
@@ -1611,8 +1666,7 @@ case 'yta': {
                         document: fs.readFileSync(`./${randomName}`),
                         mimetype: "audio/mpeg",
                         fileName: titleYt + ".mp3",
-		        caption:"𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 𝐁𝐄𝐄𝐓𝐋𝐄"
-		    }, {
+                    }, {
                         quoted: m
                     }
                 );
@@ -1729,7 +1783,7 @@ break;
                 client.sendMessage(
                     from, {
                         video: fs.readFileSync(`./${randomName}`),
-                        caption: `𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐛𝐲 𝐁𝐥𝐮𝐞 𝐁𝐞𝐞𝐭𝐥𝐞`,
+                        caption: `𖤍𝘼𝙈𝙄𖤍`,
                     }, {
                         quoted: m
                     }
@@ -1747,44 +1801,70 @@ break;
 case "ping": case "speed": { 
 
 	await loadings ()
-         m.reply (`\✰𝐏𝐨𝐧𝐠\n *${dreadedspeed.toFixed(4)}* *𝐌𝐬*`); 
+         m.reply (`\𝐏𝐨𝐧𝐠\n *${dreadedspeed.toFixed(4)}* *ms*`); 
          } 
  break; 
   
  case "runtime": { 
-                 m.reply (`𝐁𝐥𝐮𝐞 𝐁𝐞𝐞𝐭𝐥𝐞 𝙷𝚊𝚜 𝙱𝚎𝚎𝚗 𝙰𝚌𝚝𝚒𝚟𝚎 𝙵𝚘𝚛 ${runtime(process.uptime())}`) 
+                 m.reply (`𖤍𝘼𝙈𝙄𖤍  𝙷𝚊𝚜 𝙱𝚎𝚎𝚗 𝙰𝚌𝚝𝚒𝚟𝚎 𝙵𝚘𝚛 ${runtime(process.uptime())}`) 
  } 
  break;
 
-case "alive":
-
-const audiovn = "./beetle.mp3";
-    const dooc = {
-        audio: {
-          url: audiovn
-        },
-        mimetype: 'audio/mp4',
-        ptt: true,
-        waveform:  [100, 0, 100, 0, 100, 0, 100],
-        fileName: "",
-
-        contextInfo: {
-          mentionedJid: [m.sender],
-          externalAdReply: {
-          title: "𝐇𝐢 𝐡𝐮𝐦𝐚𝐧,𝐚𝐦 𝐁𝐞𝐞𝐭𝐥𝐞 𝐚 𝐁𝐨𝐭 𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 𝐊𝐢𝐦",
-          body: "https://chat.whatsapp.com/HSChig1YPPQIDEtpvzMBuo",
-          thumbnailUrl: "https://telegra.ph/file/6dc6318160bc5c9d288e5.jpg",
-          sourceUrl: "https://chat.whatsapp.com/HSChig1YPPQIDEtpvzMBuo",
-          mediaType: 1,
-          renderLargerThumbnail: true
-          }}
-      };
-
-
-await client.sendMessage(m.chat, dooc, {quoted: m});
-
-
+case "alive": { 
+  
+ client.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/93f36ed50c9727bdcfc6a.mp4' }, caption: `𝐇𝐞𝐥𝐥𝐨 *${m.pushName}*, 𖤍𝘼𝙈𝙄𖤍  𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐚𝐥𝐢𝐯𝐞 𝐬𝐢𝐧𝐜𝐞 *${runtime(process.uptime())}*,\n\n✦𝐓𝐲𝐩𝐞 ${prefix}𝐦𝐞𝐧𝐮 𝐭𝐨 𝐚𝐜𝐜𝐞𝐬𝐬 𝐦𝐲 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐥𝐢𝐬𝐭.\n✦𝐓𝐲𝐩𝐞 ${prefix}𝐫𝐞𝐩𝐨 𝐭𝐨 𝐠𝐞𝐭 𝐦𝐲 𝐬𝐨𝐮𝐫𝐜𝐞 𝐜𝐨𝐝𝐞.\n✦𝐓𝐲𝐩𝐞 ${prefix}𝐨𝐰𝐧𝐞𝐫 𝐭𝐨 𝐜𝐨𝐧𝐭𝐚𝐜𝐭 𝐦𝐲 𝐜𝐫𝐞𝐚𝐭𝐨𝐫.\n\n✦𝐄𝐧𝐣𝐨𝐲 𝐚𝐧𝐝 𝐇𝐚𝐯𝐞 𝐟𝐮𝐧 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞 𝐛𝐨𝐭.\n✦𝐌𝐚𝐝𝐞  𝐛𝐲 𝐇𝐀𝐌𝐌𝐘`,fileLength: "9999999999898989899999999" }, { quoted: m });
+ }
 break;
+case 'apk': {
+if (!text) throw `I need an apk name for download`;
+const getRandomm = (ext) => { return `${Math.floor(Math.random() * 10000)}${ext}`; }; 
+         let randomName = getRandomm(".apk"); 
+         const filePath = `./${randomName}`;     // fs.createWriteStream(`./${randomName}`) 
+let search = require('aptoide-scraper') 
+let download = require('aptoide-scraper') 
+         let searc = await search(text);          //console.log(searc); 
+         let data={}; 
+         if(searc.length){ data = await downloadd
+(searc[0].id); } 
+         else return reply("App not found!"); 
+const apkSize = parseInt(data.size); 
+         if(apkSize > 100) return reply(`File bigger!`); 
+const url = data.dllink; 
+          let  inf  ="*App Name :* " +data.name; 
+          inf +="\n*App id        :* " +data.package; 
+          inf +="\n*Last Update       :* " +data.lastup; 
+          inf +="\n*App Size     :* " +data.size; 
+         // inf +="\n*App Link     :* " +data.dllink; 
+         inf +="\n\n "+ "caption"
+
+
+axios.get(url, { responseType: 'stream' }) 
+   .then(response => { 
+     const writer = fs.createWriteStream(filePath); 
+     response.data.pipe(writer); 
+  
+     return new Promise((resolve, reject) => { 
+       writer.on('finish', resolve); 
+       writer.on('error', reject); 
+     }); 
+   }).then(() => { 
+ 
+let buttonMessage = { 
+                         document: fs.readFileSync(filePath), 
+                         mimetype: 'application/vnd.android.package-archive', 
+                         fileName: data.name+`.apk`, 
+                         caption : inf 
+  
+                     } 
+
+client.sendMessage(from, buttonMessage, { quoted: m }) 
+
+    fs.unlink(filePath, (err) => { 
+       if (err) { console.error('Error deleting file:', err); } else { console.log('File deleted successfully'); } }); 
+   }) .catch(error => { 
+         fs.unlink(filePath) 
+     return reply('*_Apk not Found, Sorry_*')//:', error.message); 
+   });
 
           case 'mix': { 
  if (!text) throw `Example : ${prefix + command} 😙+🥲` 
@@ -1822,10 +1902,11 @@ break;
    fs.unlinkSync(media); 
    if (err) throw err 
    let buffer = fs.readFileSync(mokaya); 
-   client.sendMessage(m.chat, { image: buffer, caption: `*𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐞𝐝 𝐛𝐲 𝐁𝐞𝐞𝐭𝐥𝐞 ☬*`}, { quoted: m }) 
+   client.sendMessage(m.chat, { image: buffer, caption: `*𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐞𝐝 𝐛𝐲  𝐁𝐞𝐞𝐭𝐥𝐞  ☬*`}, { quoted: m }) 
    fs.unlinkSync(mokaya); 
     }); 
     } 
+
 
 break;
 case "movie": 
@@ -1872,8 +1953,8 @@ case "movie":
              } 
  break;
  
-      case "kim": case "owner": case "kim": 
- client.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/a3cb51bf3eeacea893024.mp4' }, caption: `𝐇𝐞𝐫𝐞 𝐢𝐬 𝐦𝐲 𝐚𝐧𝐨𝐧𝐲𝐦𝐨𝐮𝐬 𝐜𝐫𝐞𝐚𝐭𝐨𝐫, +254790593618 ☤☬` }, {quoted: m}); 
+      case "kim": case "owner": case "Ami": 
+ client.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/05339bf7f8df13842df48..mp4' }, caption: `𝐇𝐞𝐫𝐞 𝐢𝐬 𝐦𝐲 𝐚𝐧𝐨𝐧𝐲𝐦𝐨𝐮𝐬 𝐜𝐫𝐞𝐚𝐭𝐨𝐫, +254737991043' }, {quoted: m}); 
   
  break;
        
@@ -1908,10 +1989,10 @@ case "movie":
          let res = groups.map(v => v.id) 
          reply(` Broadcasting in ${res.length} Group Chat, in ${res.length * 1.5} seconds`) 
          for (let i of res) { 
-             let txt = `*_</ 𝐁𝐄𝐄𝐓𝐋𝐄 𝐁𝐎𝐓 𝐁𝐎𝐓𝐁𝐑𝐎𝐀𝐃𝐂𝐀𝐒𝐓 >\n\n🀄 Message: ${text}\n\nAuthor: ${pushname}_*` 
+             let txt = `*_</ 𝘼𝙈𝙄 𝐁𝐎𝐓 𝐁𝐎𝐓𝐁𝐑𝐎𝐀𝐃𝐂𝐀𝐒𝐓 >\n\n🀄 Message: ${text}\n\nAuthor: ${pushname}_*` 
              await client.sendMessage(i, { 
                  image: { 
-                     url: "https://telegra.ph/file/02340ba6afc923969fd97.jpg" 
+                     url: "https://telegra.ph/file/60e699515c962fd7df488.jpg" 
                  }, 
                  caption: `${txt}` 
              }) 
