@@ -1,9 +1,9 @@
 const sessionName = "dreaded1";
 const antiforeign = process.env.ANTIFOREIGN || 'FALSE';
 const autobio = process.env.AUTOBIO || 'TRUE';
-let botname = process.env.BOTNAME || '𝐁𝐄𝐄𝐓𝐋𝐄 𝐁𝐎𝐓';
+let botname = process.env.BOTNAME || '𖤍𝘼𝙈𝙄𖤍';
 
-const owner = process.env.DEV || '254790593618'; // This will send a notification once the bot reconnects
+const owner = process.env.DEV || '254799384249'; // This will send a notification once the bot reconnects
 const {
   default: dreadedConnect,
   useMultiFileAuthState,
@@ -151,7 +151,7 @@ async function startHisoka() {
   console.log(`using WA v${version.join(".")}, isLatest: ${isLatest}`);
   console.log(
     color(
-      figlet.textSync("Classic-ai", {
+      figlet.textSync("Ami", {
         font: "Standard",
         horizontalLayout: "default",
         vertivalLayout: "default",
@@ -176,11 +176,12 @@ if (autobio === 'TRUE'){
 
                          client.updateProfileStatus( 
 
-                                         `𝐈 𝐀𝐌 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃 𝐓𝐎 ${botname}𝐂𝐑𝐄𝐀𝐓𝐄𝐃 𝐁𝐘 𝐃𝐀𝐌𝐎𝐍  \n\n${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })} 𝐈𝐓'𝐒 𝐀 ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}.` 
+                                         `𝐈 𝐀𝐌 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃 𝐓𝐎 ${botname}𝐂𝐑𝐄𝐀𝐓𝐄𝐃 𝐁𝐘 𝐇𝐀𝐌𝐌𝐘  \n\n${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })} 𝐈𝐓'𝐒 𝐀 ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}.` 
 
                                  ) 
 
                          }, 10 * 1000) 
+) 
 
 }
 
@@ -734,7 +735,7 @@ function _0x4dc1() {
       console.log(color("Congrats, beetle bot has successfully connected to this server", "green"));
       console.log(color("Follow me on Instagram as @kim_damon", "red"));
       console.log(color("Text the bot number with !menu to check my command list"));
-      client.sendMessage(owner + "@s.whatsapp.net", { text: `𝐁𝐄𝐄𝐓𝐋𝐄 𝐁𝐎𝐓 𝐡𝐚𝐬 𝐬𝐭𝐚𝐫𝐭𝐞𝐝. . .\n\n𝐁𝐎𝐓 𝐑𝐔𝐍𝐍𝐈𝐍𝐆\n\nHave fun with the bot😁` });
+      client.sendMessage(owner + "@s.whatsapp.net", { text: `𖤍𝘼𝙈𝙄𖤍 𝐁𝐎𝐓 𝐡𝐚𝐬 𝐬𝐭𝐚𝐫𝐭𝐞𝐝. . .\n\n𝐁𝐎𝐓 𝐑𝐔𝐍𝐍𝐈𝐍𝐆\n\nHave fun with the bot😁` });
     }
     // console.log('Connected...', update)
   });
