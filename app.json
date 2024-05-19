@@ -16,7 +16,7 @@
   ],
   "website": "https://github.com/Hammy254/Ami#readme",
   "repository": "https://github.com/Hammy254/Ami.git",
-  "logo": ""https://telegra.ph/file/b6dcbe7d11efd07bb4c25.jpg",
+  "logo": "https://telegra.ph/file/b6dcbe7d11efd07bb4c25.jpg",
   "success_url": "/",
   "env": {
     "PREFIX": {
