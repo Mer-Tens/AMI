@@ -54,7 +54,7 @@ Linking/Pairing:[https://replit.com/@hechem254/Ami-1]
 </a>
 </h2>
 
-[https://dreaded-pair.onrender.com]
+[https://AMI-pair.onrender.com]
 
     
 <h2 align="center">   
@@ -76,12 +76,7 @@ Linking/Pairing:[https://replit.com/@hechem254/Ami-1]
  
      
 
-    
- 
-
-
-
-Incase you're facing any problems with rhe deployments, contact me  [here](https://wa.me/254799384249) via WhatsApp or [here](Evancehamington@gmail.com) via Email.
+  
 
 Modifying the bot structure is at your own risk. We won't offer technical support in case of errors resulting!
 
