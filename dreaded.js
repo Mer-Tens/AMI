@@ -1405,7 +1405,7 @@ break;
 	      
   case "credits": 
   
-              client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/e7edee7938f55a07fe0d6.jpg' }, caption: `We express sincere gratitude and acknowledgement to the following:\n\n- Writing the base code using case method\nhttps://github.com/DikaArdnt\n\n -Adiwajshing ➪ India\n - Writing and Coding the bot's library (baileys)\nhttps://github.com/WhiskeySockets/Baileys\n\n -WAWebSockets Discord Server community\n-Maintaining and reverse engineering the Web Sockets\nhttps://discord.gg/WeJM5FP9GG\n\n - Fortunatus Mokaya ➪ Kenya\n - Actively compiling and debugging parts of this bot script\nhttps://github.com/Fortunatusmokaya\n\n𝘼𝙈𝙄 𝐁𝐎𝐓 シ︎`}); 
+              client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/e7edee7938f55a07fe0d6.jpg' }, caption: `We express sincere gratitude and acknowledgement to the following:\n\n- Writing the base code using case method\nhttps://github.com/DikaArdnt\n\n -Adiwajshing ➪ India\n - Writing and Coding the bot's library (baileys)\nhttps://github.com/WhiskeySockets/Baileys\n\n -WAWebSockets Discord Server community\n-Maintaining and reverse engineering the Web Sockets\nhttps://discord.gg/WeJM5FP9GG\n\n - Hammy ➪ Kenya\n - Actively compiling and debugging parts of this bot script\nhttps://github.com/Hammy254\n\n𝘼𝙈𝙄 𝐁𝐎𝐓 シ︎`}); 
  break;
 		       case "take": {
 try {
