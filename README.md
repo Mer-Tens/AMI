@@ -54,7 +54,7 @@ Linking/Pairing:[https://replit.com/@hechem254/Ami-1]
 </a>
 </h2>
 
-[https://dreaded-pair.onrender.com]
+
 
     
 <h2 align="center">   
